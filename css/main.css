@@ -1,0 +1,20 @@
+.headerName {
+    font-size: 50px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 250px;
+}
+
+.btnbtn {
+    display: flex;
+    justify-content: center;
+}
