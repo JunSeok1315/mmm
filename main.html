@@ -43,6 +43,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const movieCardList = document.getElementById('movieCardList');
+            const movieSearchInput = document.querySelector(".form-control");
+            movieSearchInput.focus();
 
             const options = {
                 method: 'GET',
@@ -64,7 +66,7 @@
             const createMovieCard = movie => {
                 const card = document.createElement('div');
                 card.classList.add('col-md-3', 'mb-4');
-                card.innerHTML =`
+                card.innerHTML = `
                     <div class="card">
                         <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" class="card-img-top" alt="${movie.title}">
                             <div class="card-body">
@@ -85,7 +87,7 @@
             };
         });
 
-        
+
 
         const filterMovies = () => {
             const searchInput = document.querySelector('.form-control');
